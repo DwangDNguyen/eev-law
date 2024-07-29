@@ -1,0 +1,107 @@
+@import "../../style/_mixins.scss";
+.advise-header {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    .advise-header-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: var(--white-color);
+        text-align: center;
+        margin: 0;
+    }
+}
+.advise-container {
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    // flex-wrap: wrap;
+    gap: 30px;
+
+    @include respond(tablet) {
+        padding: 60px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    @include respond(mobile) {
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px 30px;
+    }
+    .error {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        span {
+            font-size: 1.8rem;
+        }
+    }
+    .advise-container-left {
+        flex: 3;
+
+        .advise-container-list-post {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            // min-height: 100vh;
+            .loading {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+        }
+    }
+
+    .advise-container-right {
+        flex: 1;
+        @include respond(tablet) {
+            box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            padding: 30px 20px;
+            width: 100%;
+        }
+
+        @include respond(mobile) {
+            box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            padding: 30px 20px;
+            width: 100%;
+        }
+    }
+}
