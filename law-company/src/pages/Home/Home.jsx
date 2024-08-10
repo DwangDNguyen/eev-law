@@ -62,7 +62,7 @@ const Home = () => {
                     <meta charSet="utf-8" />
                     <title>EEV LAW FIRM</title>
                     <meta name="description" content="Home of EEV GROUP" />
-                    <link rel="canonical" href="https://eev.vn" />
+                    <link rel="canonical" href="https://law.eev.vn" />
                 </Helmet>
                 <div className={cx("home-banner")}>
                     <div className={cx("home-banner-bgr")}>
@@ -114,13 +114,13 @@ const Home = () => {
                         </div>
                         <div className={cx("home-banner-image")}>
                             <img
-                                srcSet={`${Banner} 2x`}
+                                srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723255374/banner_r0ilgu.png 2x"
                                 alt="banner-EEV"
                                 loading="lazy"
                                 className={cx("img-banner")}
                             />
                             <img
-                                srcSet={`${SubBanner} 2x`}
+                                srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723255429/sub_banner_z1a9la.png 2x"
                                 alt="banner-EEV"
                                 loading="lazy"
                                 className={cx("sub-banner")}
@@ -131,7 +131,7 @@ const Home = () => {
                 <div className={cx("home-section")}>
                     <div className={cx("home-section-rectangle")}>
                         <img
-                            srcSet={`${Rectangle} 2x`}
+                            srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723255426/rectangle_wdqyl6.png 2x"
                             loading="lazy"
                             alt="rectangle"
                         />
@@ -139,7 +139,7 @@ const Home = () => {
                     <div className={cx("home-section-container")}>
                         <div className={cx("home-section-left")}>
                             <img
-                                srcSet={`${SectionImage1} 2x`}
+                                srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723255425/jurist-lawyer-law-firm-legal-advice-lawyer_yyuikc.png 2x"
                                 alt="section-1"
                                 loading="lazy"
                                 data-aos="fade-left"
@@ -147,7 +147,7 @@ const Home = () => {
                         </div>
                         <div className={cx("logo-mobile")}>
                             <img
-                                srcSet={`${LogoEEV} 2x`}
+                                srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723256196/logo-eev_mpokan.png 2x"
                                 alt="logo-eev"
                                 loading="lazy"
                                 data-aos="fade-right"
@@ -193,7 +193,7 @@ const Home = () => {
                             <div className={cx("home-service-item-top")}>
                                 <div className={cx("home-service-item-img")}>
                                     <img
-                                        srcSet={`${CourtHouse} 2x`}
+                                        srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723255387/courthouse_xmoern.png 2x"
                                         loading="lazy"
                                         alt="court-house"
                                     />
@@ -220,7 +220,7 @@ const Home = () => {
                             <div className={cx("home-service-item-top")}>
                                 <div className={cx("home-service-item-img")}>
                                     <img
-                                        srcSet={`${Hammer} 2x`}
+                                        srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723255401/hammer_wa6ppo.png 2x"
                                         loading="lazy"
                                         alt="hammer"
                                     />
@@ -248,7 +248,7 @@ const Home = () => {
                             <div className={cx("home-service-item-top")}>
                                 <div className={cx("home-service-item-img")}>
                                     <img
-                                        srcSet={`${Agreement} 2x`}
+                                        srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723255359/agreement_gpfyaw.png 2x"
                                         loading="lazy"
                                         alt="Agreement"
                                     />
@@ -275,7 +275,7 @@ const Home = () => {
                             <div className={cx("home-service-item-top")}>
                                 <div className={cx("home-service-item-img")}>
                                     <img
-                                        srcSet={`${Knife} 2x`}
+                                        srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723255426/knife_a2zt6d.png 2x"
                                         alt="knife"
                                         loading="lazy"
                                     />
@@ -302,7 +302,7 @@ const Home = () => {
                 <div className={cx("home-contact")} ref={contactRef}>
                     <div className={cx("bg-home-contact")}>
                         <img
-                            srcSet={`${BgHomeContact} 2x`}
+                            srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723198892/bg-contact_svmqic.jpg 2x"
                             loading="lazy"
                             alt="bg-home-contact"
                         />

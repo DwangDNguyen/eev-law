@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import { api } from "../../utils/axios";
 import { BgHeader, Error } from "../../imageEntry";
 import CardPost from "../../components/CardPost/CardPost";
-import { Pagination } from "antd";
+import { ConfigProvider, Pagination } from "antd";
 import { Flex, Spin } from "antd";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
@@ -61,7 +61,7 @@ const SearchPage = () => {
                 {searchPosts.length === 0 && !isLoading ? (
                     <div className={cx("error")}>
                         <img
-                            srcSet={`${Error} 2x`}
+                            srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723256197/not-found_exyonc.webp 2x"
                             alt="Error"
                             loading="lazy"
                         />
@@ -84,13 +84,28 @@ const SearchPage = () => {
                         </div>
 
                         <div className={cx("pagination")}>
-                            <Pagination
-                                defaultCurrent={1}
-                                total={totalPosts}
-                                showSizeChanger={false}
-                                pageSize={2}
-                                onChange={handleChangePage}
-                            />
+                            <ConfigProvider
+                                theme={{
+                                    token: {
+                                        colorBgTextActive: "#fff",
+                                        colorPrimary: "#fff",
+                                    },
+                                    components: {
+                                        Pagination: {
+                                            itemActiveBg: "#1a284d",
+                                            itemBg: "#1a284d",
+                                        },
+                                    },
+                                }}
+                            >
+                                <Pagination
+                                    defaultCurrent={1}
+                                    total={totalPosts}
+                                    showSizeChanger={false}
+                                    pageSize={2}
+                                    onChange={handleChangePage}
+                                />
+                            </ConfigProvider>
                         </div>
                     </div>
                 )}

@@ -1,3 +1,4 @@
+@import "../../style/_mixins.scss";
 .login {
     max-width: 1920px;
     margin: 0 auto;
@@ -11,22 +12,52 @@
         display: flex;
 
         width: 50%;
-        height: 50%;
+
         border-radius: 10px;
         border: 1px solid #dde1ef;
+
+        @include respond(tablet) {
+            flex-direction: column;
+        }
+
+        @include respond(mobile) {
+            flex-direction: column;
+            width: initial;
+        }
         .image {
             width: 50%;
-            height: 100%;
+
             background-color: var(--primary-color);
             display: flex;
             align-items: center;
             justify-content: center;
 
+            @include respond(tablet) {
+                width: 100%;
+                background-color: white;
+                padding: 30px 0 0 0;
+            }
+            @include respond(mobile) {
+                width: 100%;
+                background-color: white;
+                padding: 30px 0 0 0;
+            }
             img {
                 width: 50%;
                 height: 50%;
                 object-fit: contain;
                 border-radius: 10px;
+
+                @include respond(tablet) {
+                    width: initial;
+                    height: initial;
+                    object-fit: cover;
+                }
+                @include respond(mobile) {
+                    width: initial;
+                    height: initial;
+                    object-fit: cover;
+                }
             }
         }
         .login-form {
@@ -37,6 +68,13 @@
             align-items: center;
             padding: 20px;
             background-color: #fff;
+
+            @include respond(tablet) {
+                width: 100%;
+            }
+            @include respond(mobile) {
+                width: 100%;
+            }
             h1 {
                 font-size: 2.4rem;
                 font-weight: 600;
@@ -47,18 +85,22 @@
                 font-weight: 400;
                 margin-top: 10px;
                 color: #5d6a82;
-                margin-bottom: 50px;
+                margin-bottom: 20px;
+                text-align: center;
             }
         }
-
-        .form-button {
+        form {
             width: 100%;
-            margin-top: 20px;
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-            &:hover {
+            padding: 20px;
+            .form-button {
+                width: 100%;
+                margin-top: 20px;
                 background-color: var(--primary-color);
                 border-color: var(--primary-color);
+                &:hover {
+                    background-color: var(--primary-color);
+                    border-color: var(--primary-color);
+                }
             }
         }
     }

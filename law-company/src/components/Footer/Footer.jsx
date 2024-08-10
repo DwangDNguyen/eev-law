@@ -10,7 +10,11 @@ const Footer = () => {
         <footer className={cx("footer")}>
             <div className={cx("wrapper")}>
                 <div className={cx("footer-left")}>
-                    <img src={logoFull} alt="logo" loading="lazy" />
+                    <img
+                        src="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723256196/logo-full_vr7bul.png"
+                        alt="logo"
+                        loading="lazy"
+                    />
                 </div>
                 <div className={cx("footer-right")}>
                     <div className={cx("footer-info")}>

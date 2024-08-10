@@ -78,14 +78,14 @@ const Login = () => {
                         <img srcSet={`${LogoEEV} 2x`} alt="logo-eev" />
                     </div>
                     <div className={cx("login-form")}>
-                        <h1>Login</h1>
+                        <h1>Đăng nhập</h1>
                         <span className={cx("login-form-title")}>
-                            Only admins can login.
+                            Chỉ quản trị viên mới có thể đăng nhập
                         </span>
                         <Form
                             // {...layout}
                             form={form}
-                            // layout="vertical"
+                            layout={"vertical"}
                             name="control-hooks"
                             onFinish={onFinish}
                             validateMessages={validateMessages}

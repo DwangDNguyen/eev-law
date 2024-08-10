@@ -76,7 +76,7 @@ const Advise = () => {
                 {posts.length === 0 && !isLoading ? (
                     <div className={cx("error")}>
                         <img
-                            srcSet={`${Error} 2x`}
+                            srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723256197/not-found_exyonc.webp 2x"
                             alt="Error"
                             loading="lazy"
                         />

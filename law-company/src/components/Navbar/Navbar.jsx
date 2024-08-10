@@ -99,7 +99,10 @@ const Navbar = () => {
             <Sidebar />
             <div className={cx("navbar-content")}>
                 <div className={cx("logo")}>
-                    <img srcSet={`${LogoNav} 2x`} alt="logo" />
+                    <img
+                        srcSet="https://res.cloudinary.com/dknl2t1z1/image/upload/v1723256196/logo-nav_sdy4jp.png 2x"
+                        alt="logo"
+                    />
                 </div>
                 <div className={cx("menu")}>
                     <Space direction="vertical">

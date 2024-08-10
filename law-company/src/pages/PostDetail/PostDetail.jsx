@@ -21,9 +21,7 @@ const PostDetail = () => {
         const fetchPost = async () => {
             try {
                 setLoading(true);
-                const res = await axios.get(
-                    "http://localhost:5000/api/post/getPost/" + id
-                );
+                const res = await api.get("/getPost/" + id);
 
                 const resNewestPosts = await api.get("/newestPosts");
                 setPost(res.data);

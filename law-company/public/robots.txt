@@ -1,0 +1,18 @@
+# https://www.robotstxt.org/robotstxt.html
+user-agent: *
+disallow: /login
+disallow: /dashboard
+
+allow: /
+allow: /recruitment
+
+user-agent: magicsearchbot
+disallow: /login
+disallow: /dashboard
+
+
+allow: /
+allow: /recruitment
+
+
+sitemap: https://law.eev.vn/sitemap.xml
